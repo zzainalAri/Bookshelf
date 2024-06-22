@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps Zainal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <<div class="container">
+    <h1>Bookshelf Apps Zainal</h1>
+
+    <div class="add-book-form">
+        <h2>Tambah Buku Baru</h2>
+        <form id="addBookForm">
+            <div class="form-group">
+                <label for="title">Judul:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Penulis:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Tahun:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+
+            <div class="form-group">
+                <label for="isComplete">Sudah Dibaca:</label>
+                <input type="checkbox" id="isComplete" name="isComplete">
+            </div>
+
+            <button type="submit">Tambah Buku</button>
+        </form>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari buku...">
+    </div>
+
+    <div class="bookshelves">
+        <div class="bookshelf" id="unreadShelf">
+            <h2>Buku yang belum dibaca</h2>
+            <ul id="unreadList"></ul>
+        </div>
+
+        <div class="bookshelf" id="readShelf">
+            <h2>Buku yang telah dibaca</h2>
+            <ul id="readList"></ul>
+        </div>
+    </div>
+</div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
